@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Stopwatch from './StopWatch';
-import Timer from './Timer';
+import Timer from './components/Time/Timer';
+import Stopwatch from './components/Time/StopWatch';
 
 const App = () => {
   return (

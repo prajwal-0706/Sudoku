@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function Stopwatch() {
+const Stopwatch = () => {
   const [isRunning, setIsRunning] = useState(false);
   const [time, setTime] = useState(0);
 
@@ -37,14 +37,14 @@ function Stopwatch() {
       <button onClick={reset}>Reset</button>
     </div>
   );
-}
+};
 
-function formatTime(seconds) {
+const formatTime = (seconds) => {
   const minutes = Math.floor(seconds / 60);
   const remainingSeconds = seconds % 60;
   return `${String(minutes).padStart(2, '0')}:${String(
     remainingSeconds
   ).padStart(2, '0')}`;
-}
+};
 
 export default Stopwatch;

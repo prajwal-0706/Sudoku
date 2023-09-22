@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #ededed;
+}
+
+.fixedDiv {
+  width: 100%;
+  height: 50vh;
+  background-color: #307df6;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 500ms ease;
 }
